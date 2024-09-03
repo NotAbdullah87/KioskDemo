@@ -1,0 +1,22 @@
+<app-header></app-header>
+<div class="text-center mt-[20vh] flex flex-col items-center justify-center flex-1">
+  <h1 class="text-3xl font-[700] font-Poppins">Welcome !! 👋</h1>
+  <p>Click on the button below to get started</p>
+  
+  <!-- Start Button -->
+  <button class="mt-10 pl-5 pr-5 text-[16px] font-[700] pt-2 pb-2 rounded-lg w-96"
+  style="border: 3.5px solid var(--turq); color: var(--turq);" (click)="openModal()">
+  START
+  </button>
+
+  <!-- Facial Recognition Section -->
+  <div class="bg-[var(--yell)] w-1/2 p-2 flex items-center justify-center rounded-xl mt-10">
+    <h1 class="text-lg font-semibold">Facial Recognition</h1>
+  </div>
+
+  <!-- Login Modal Box -->
+  <app-login-modal-box *ngIf="isModalOpen" 
+                       (close)="closeModal()" 
+                       (submit)="handleSubmit($event)">
+  </app-login-modal-box>
+</div>

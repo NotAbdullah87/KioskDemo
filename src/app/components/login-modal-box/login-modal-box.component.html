@@ -1,0 +1,26 @@
+<div class="modal-overlay" *ngIf="true">
+    <div class="modal-content">
+        <h2 class="text-2xl mb-2 text-black ">Login</h2>
+        <form (ngSubmit)="onSubmit()">
+            <div class="mt-4">
+                <label class="text-left" for="email">Email:</label>
+                <br>
+                <input class="rounded-lg p-2 w-72" style="border: 1px solid black; color: var(--turq);" id="email"
+                    [(ngModel)]="email" name="email" type="email" required>
+            </div>
+            <div class="mt-4">
+                <label for="password">Password:</label>
+                <br>
+                <input class="rounded-lg p-2 w-72" style="border: 1px solid black; color: var(--turq);" id="password"
+                    [(ngModel)]="password" name="password" type="password" required>
+            </div>
+            <div class="flex text-center justify-center ">
+                <button class="bg-[var(--turq)] w-32 mr-2 text-white rounded-lg mt-4 p-2" type="submit">Submit</button>
+                <br>
+                <button class="mt-4 w-32 p-1 rounded-lg " style="border: 2px solid rgb(250, 146, 146); color:rgb(250, 146, 146)"
+                    type="button" (click)="closeModal()">Close</button>
+            </div>
+
+        </form>
+    </div>
+</div>

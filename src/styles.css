@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --turq : #3AAD84;
+    --yell : #FFF0A0 ; 
+    --yellHover : #fae678 ; 
+    --turqHover : #1e9269 ; 
+    
+}
+html{
+    font-family: 'Poppins';
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins';
+}
